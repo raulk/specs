@@ -101,11 +101,11 @@ We are exploring ways to make mDNS-discovery beacons encrypted (so that other no
 
 **Privacy note:** mDNS advertises in local area networks, which reveals IP addresses to listeners in the same local network. It is not recommended to use this with privacy-sensitive applications or oblivious routing protocols.
 
-#### 4.4.2 random-walk
+### 4.4.2 random-walk
 
 Random-Walk is a Discovery Protocol for DHTs (and other protocols with routing tables). It makes random DHT queries in order to learn about a large number of peers quickly. This causes the DHT (or other protocols) to converge much faster, at the expense of a small load at the very beginning.
 
-#### 4.4.3 bootstrap-list
+### 4.4.3 bootstrap-list
 
 Bootstrap-List is a Discovery Protocol that uses local storage to cache the addresses of highly stable (and somewhat trusted) peers available in the network. This allows protocols to "find the rest of the network". This is essentially the same way that DNS bootstraps itself (though note that changing the DNS bootstrap list -- the "dot domain" addresses -- is not easy to do, by design).
 
@@ -115,15 +115,14 @@ Bootstrap-List is a Discovery Protocol that uses local storage to cache the addr
 
 ## 4.5 Messaging
 
-#### 4.5.1 PubSub
+### 4.5.1 PubSub
 
 See [`pubsub/`](pubsub/) and [`pubsub/gossipsub/`](pubsub/gossipsub/).
 
-
 ## 4.6 Naming
 
-#### 4.6.1 IPRS
+### 4.6.1 IPRS
 
 [IPRS spec](/IPRS.md)
 
-#### 4.6.2 IPNS
+### 4.6.2 IPNS
